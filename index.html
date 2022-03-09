@@ -1,67 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Home</title>
 
-    <link rel="icon" href="https://www.designbust.com/download/1037/png/netflix_logo_png_transparet512.png " type="image/gif">
-    <link href="https://github.com/google/material-design-icons/">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jeff GBANZIALI" />
+    <meta name="description" content="Watch TV Shows Online, Watch Movies Online" />
+    <title> Netflix Home</title>
+    <link rel="icon" type="image/png" href="./assets/logo/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
 </head>
 
-<body class="bg-black text-white bg-cover bg-gradient-to-r h-screen object-fill " style="background-image: url(https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABSjmGbTRKGriuBr3O6aT3ice6_yB7-Kq1lwpRP1QmZSDmvWN0Du_0cqlaDONncNIQdUEb2Q5NzAurjUQvxwSHsmbUCjc.jpg?r=105)">
+<body class="bg-black overflow-x-hidden">
 
-    <!------------------------------   header  -------------------------------------------->
     <header>
 
-        <section class="items-start mt-2 mt-2  ">
-            <nav>
-                <div class="space-x-4 flex items-center ml-10 justify-center lg:justify-start ">
-                    <img class="h-11 w-16 md:w-32 lg:w-48sm " src=" https://i.ibb.co/XW2vnBh/Netflix-logo.png ">
-                    <p class="text-sm antialiased hidden lg:block"><a class="hover:underline" href="#">Home</a</p>
-                    <p class="text-sm antialiased hidden lg:block"><a class="hover:underline" href="#">TV shows</a></p>
-                    <p class="text-sm antialiased hidden lg:block"><a class="hover:underline" href="#">Movies</a> </p>
-                    <p class="text-sm antialiased hidden lg:block"><a class="hover:underline" href="#">New & Popular</a> </p>
-                    <p class="text-sm antialiased hidden lg:block"><a class="hover:underline" href="#">My List</a> </p>
-                </div>
+        <section class="fixed top-0 w-full bg-gradient-to-b from-black text-white">
 
-                </div>
-            </nav>
+            <div class="flex xl:flex-row flex-col items-center py-5 px-12 ml-2">
+                <a href="#">
+                    <img src="https://assets.nflxext.com/en_us/layout/ecweb/common/logo-shadow2x.png" alt="Netflix" class="w-24 cursor-pointer" />
+                </a>
+                <nav class="hidden xl:flex space-x-6 ml-10 text-sm font-light w-1/2">
+                    <a href="#" class="font-medium">Home</a>
+                    <a href="#" class="hover:text-gray-400">TV Shows</a>
+                    <a href="#" class="hover:text-gray-400">Movies</a>
+                    <a href="#" class="hover:text-gray-400">New & Popular</a>
+                    <a href="#" class="hover:text-gray-400">My List</a>
+                    <a href="#" class="hover:text-gray-400">Watch Again</a>
+                </nav>
 
-        </section>
+                <nav class="hidden xl:flex justify-center items-center space-x-8 ml-auto text-base font-semibold">
+                    <button><i class="fas fa-search text-xl cursor-pointer focus:outline-none"></i></button>
+                    <button><i class="fas fa-gift text-xl cursor-pointer focus:outline-none"></i></button>
+                    <button><i class="fas fa-bell text-xl cursor-pointer focus:outline-none"></i></button>
 
-        <section class="justify-end flex -mt-12 mr-10">
-            <nav>
-                <div class="space-x-6  items-center hidden items-end lg:flex">
-                    <span class="material-icons cursor-pointer">
-                search
-                </span>
-                    <span class="material-icons cursor-pointer">
-                    card_giftcard
-                    </span>
+                    <button class="flex items-center focus:outline-none">
+                            <img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/avatar.jpg?v=1646815955058" alt="Avatar" class="w-8 h-8 rounded"/>
+                            <svg class="w-5 h-5 text-white ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
 
-                    <span class="material-icons cursor-pointer">
-                notifications_none
-                </span>
-                    <img class="h-8 rounded-lg -mr-4 cursor-pointer" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/84c20033850498.56ba69ac290ea.png">
-                </div>
-            </nav>
+                        </button>
+
+                </nav>
+            </div>
 
         </section>
 
-        <section class="justify-end flex -mt-6 mr-5 ">
-            <nav>
-                <div class="space-x-6 items-end">
-                    <span class="material-icons cursor-pointer">
-                        arrow_drop_down
-                        </span>
+        <section class="h-screen">
+
+            <div>
+
+                <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABSjmGbTRKGriuBr3O6aT3ice6_yB7-Kq1lwpRP1QmZSDmvWN0Du_0cqlaDONncNIQdUEb2Q5NzAurjUQvxwSHsmbUCjc.jpg?r=105" alt="Vikings Valahlla" class="w-full h-screen object-cover"
+                />
+                <div class="absolute top-40 px-16">
+
+                    <div class="flex flex-col xl:w-5/12 lg:w-6/12 md:w-8/12 sm:w-8/12 space-y-2 py-12">
+                        <img src="./assets/img/2111.png" alt="Vikings Valahlla" />
+                        <p class="text-white text-lg text-justify">In this sequel to "Vikings," a hundred years have passed and a new generation of lsegendary heroes arises to forge its own destiny and make history.</p>
+
+                        <div class="flex flex-row w-full space-x-4">
+                            <button class="flex justify-center items-center bg-white hover:bg-opacity-80 rounded-lg shadow-md space-x-2 px-8 py-2 mt-5">
+                                    <i class="fas fa-play"></i>
+                                    <span class="text-gray-800 font-semibold">Play</span>
+
+                                </button>
+                            <button class="flex justify-center items-center bg-gray-800 bg-opacity-80 hover:bg-opacity-60 rounded-lg shadow-md space-x-2 px-8 py-2 mt-5">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path> 
+                                    </svg>
+                                    <span class="text-white font-semibold">More Info</span>
+                                </button>
+                        </div>
+
+                    </div>
+
                 </div>
-            </nav>
+
+            </div>
+
+
+            <!-- wallpaper, bg gradient to top -->
+            <div class="absolute bottom-0 bg-gradient-to-t from-black w-full h-40"></div>
+
 
         </section>
 
@@ -69,51 +95,98 @@
 
     <main>
 
-        <section>
-            <br><br>
-
-            <div class="-py-10 space-x-2">
-                <img class=" h-8 ml-32 mt-10 " src="https://www.designbust.com/download/1037/png/netflix_logo_png_transparet512.png " alt=" ">
+        <!-- My List-->
+        <section class="mx-5 p-1.5">
+            <h1 class="text-white ml-10 font-bold">My List</h1>
+            <div class=" duration-200 flex overflow-hidden overflow-x-scroll items-center inline-block align-baseline">
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/anonim.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
+                <a href=""><img src="./assets/img/green-snake-2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/horror12.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/casa.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/kenshin.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/rom4.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/narcos.jpg" alt="" class=" hover:scale-y- object-contain max-h-64 m-2 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
             </div>
-            <p class=" text-sm font-mono ml-40 mb-8 -mt-8 mr-4 ">
-                SERIES
-            </p>
-
-        </section>
-        <section>
-            <p class=" font-mono text-6xl font-serif mx-48 ">
-                VIKINGS:
-            </p>
-            <P class=" font-mono text-xl font-serif mx-64 ">
-                Valahlla
-            </P>
-
-        </section>
-        <section>
-            <p class="text-xl mx-32 mt-12">
-                The adventures of some of history's most famous Vikings<br> who blaze new trails in an ever-changing Europe:<br>explorer Leif Eriksson, his sister Freydis Eriksdotter and the ambitious <br>Prince of the North Harald Sigurdsson.
-
-
-            </p>
-
         </section>
 
-        <section>
-            <br>
-            <p class="space-x-8 text-xl ml-40 ">
-                <a class="text-black p-2 border-solid border-2 rounded-lg bg-gray-200 over:border-gray-100 hover:bg-gray-100 " href="# "><span class="material-icons ">play_arrow</span>Play</a>
-                <a class="text-white p-2 border-solid border-2 rounded-lg bg-black-100 hover:border-black-100 hover:bg-gray-900 " href="# "><span class=" space-x-8 material-icons ">info</span>More Info</a>
-            </p>
+        <br>
+
+
+        <section class="mx-5 p-1.5">
+            <h1 class="text-white">Neflix Originals</h1>
+            <div class=" duration-200 flex overflow-hidden overflow-x-scroll items-center">
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/anonim.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
+                <a href=""><img src="./assets/img/green-snake-2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/horror12.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/casa.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/kenshin.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/rom4.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/narcos.jpg" alt="" class=" hover:scale-y- object-contain max-h-64 m-2 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+            </div>
+        </section>
+        <br>
+
+        <section class="mx-5 p-1.5">
+            <h1 class="text-white">TV Show</h1>
+            <div class=" duration-200 flex overflow-hidden overflow-x-scroll items-center">
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/anonim.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
+                <a href=""><img src="./assets/img/green-snake-2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/horror12.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/casa.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/kenshin.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/rom4.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/narcos.jpg" alt="" class=" hover:scale-y-105 object-contain max-h-64 m-2 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+            </div>
+        </section>
+        <br>
+
+        <section class="mx-5 p-1.5">
+            <h1 class="text-white">Trending Now</h1>
+            <div class=" duration-200 flex overflow-hidden overflow-x-scroll  items-center">
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/anonim.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
+                <a href=""><img src="./assets/img/green-snake-2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/horror12.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/casa.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/kenshin.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/rom4.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/narcos.jpg" alt="" class=" hover:scale-y-105 object-contain max-h-64 m-2 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+            </div>
+        </section>
+        <br>
+
+
+        <section class="mx-5 p-1.5">
+            <h1 class="text-white">Top 10 on planet Mars Today </h1>
+            <div class=" duration-200 flex overflow-hidden overflow-x-scroll items-center">
+                <div class="flex items-center relative  space-x-20">
+                    <div class="flex items-center"><img class=" items-center " src="./assets/img/top_1.png " alt=" "><img class=" hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/ems.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw=="></div>
+                    <div class=" flex items-center "><img class="w-auto h-auto " src="./assets/img/top_2.png " alt=" "><img class="  hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/narcos.jpg "></div>
+                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_3.png " alt=" "><img class=" hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/rom11.jpg "></div>
+                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_4.png" alt=" "><img class="  hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/horror14.jpg "></div>
+                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_5.png" alt=" "><img class=" hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/comedie7.jpg "></div>
+                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_6.png " alt=" "><img class="  hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/doc10.jpg "></div>
+                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_7.png " alt=" "><img class="  hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/newgods.jpg "></div>
+                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_8.png" alt=" "><img class=" hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/jojo.jpg"></div>
+                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_9.png " alt=" "><img class="  hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/green-snake-2.jpg "></div>
+                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_10.png" alt=" "><img class=" hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/casa.jpg"></div>
+                </div>
 
         </section>
+
+
     </main>
-
-    </div>
-    </div>
-
-
-    <div class="row ">
-
 
 
 </body>
