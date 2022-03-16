@@ -10,12 +10,15 @@
     <title> Netflix Home</title>
     <link rel="icon" type="image/png" href="./assets/logo/favicon.ico" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
 </head>
 
 <body class="bg-black overflow-x-hidden">
+
+    <!------------------------------------------------Haeader------------------------------------------------>
 
     <header>
 
@@ -93,26 +96,68 @@
 
     </header>
 
+    <!------------------------------------------------Haeader------------------------------------------------>
+
+    <!------------------------------------------------Main------------------------------------------------>
+
     <main>
 
         <!-- My List-->
-        <section class="mx-5 p-1.5 overflow-x-scroll">
-            <h1 class="text-white ml-10 font-bold">My List</h1>
-            <div class=" duration-200 flex items-center inline-block align-baseline">
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/anonim.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
-                <a href=""><img src="./assets/img/green-snake-2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/horror12.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/casa.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/kenshin.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/rom4.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/narcos.jpg" alt="" class=" hover:scale-y- object-contain max-h-64 m-2 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+
+
+        </div>
+        <h1 class="text-white ml-9 font-bold">My List</h1>
+        <section class="mx-5 p-1.5 ">
+            <div class="carousel">
+                <div class=" scrollbar-left left-arrow absolute bg-gray-900 pt-4 opacity-0 hover:opacity-40 ">
+                    <!--items-start flex-->
+                    <button class="  focus:outline-none text-white text-4xl absolute my-28 z-30  ">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+                </div>
+                <div class=" duration-200 flex items-center inline-block align-baseline">
+                    <div class="bar">
+                        <a href=""><img src="./assets/img/horror1.jpg" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
+                        <a href=""><img src="./assets/img/anonim.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
+                        <a href=""><img src="./assets/img/green-snake-2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
+                        <a href=""><img src="./assets/img/horror12.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
+                        <a href=""><img src="./assets/img/casa.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                        <a href=""><img src="./assets/img/kenshin.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                        <a href=""><img src="./assets/img/rom4.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
+                        <a href=""><img src="./assets/img/comedie12.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
+                        <a href=""><img src="./assets/img/horror14.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
+                        <a href=""><img src="./assets/img/rom10.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                        <a href=""><img src="./assets/img/doc3.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                        <a href=""><img src="./assets/img/rom6.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
+                        <a href=""><img src="./assets/img/narcos.jpg" alt="" class=" hover:scale-y- object-contain max-h-64 m-2 max-w-xs rounded"></a>
+                        <a href=""><img src="./assets/img/horror7.jpg" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+                        <a href=""><img src="./assets/img/horror13.jpg" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+
+                    </div>
+                </div>
+
+                <div class=" scrollbar-rigth right-arrow grid justify-items-end   ">
+                    <!--items-end flex grid justify-items-end-->
+                    <button class="text-white text-4xl absolute mb-28 z-30 bg-blue opacity-0 hover:opacity-40 ">
+                    <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+                </div>
             </div>
+
+
+
         </section>
 
+
+
+        <!-- My List-->
+
+
         <br>
+
+        <!-- Netflix Originals-->
 
 
         <section class="mx-5 p-1.5">
@@ -132,6 +177,9 @@
         </section>
         <br>
 
+        <!-- Netflix Originals-->
+
+        <!-- TV Show-->
         <section class="mx-5 p-1.5">
             <h1 class="text-white ml-10 font-bold">TV Show</h1>
             <div class=" duration-200 flex overflow-hidden overflow-x-scroll items-center">
@@ -148,6 +196,10 @@
             </div>
         </section>
         <br>
+
+        <!-- TV Show-->
+
+        <!-- TV Shows par genre-->
         <section>
 
             <div class="px-12 py-3 mx-6 ">
@@ -157,29 +209,29 @@
                 <br>
                 <div>
 
-                    <div class="grid gap-2 lg:grid-cols-7 md:grid-cols-6">
+                    <div class="grid gap-3 xl:grid-cols-7 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2">
 
-                        <div class="relative bg-gradient-to-r from-green-900 to-green-100 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r hover:opacity-50 from-green-900 to-green-100 rounded overflow-hidden">
                             <a class="absolute top-1/4 left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">Action</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
 
-                        <div class="relative bg-gradient-to-r from-red-900 to-red-100 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r hover:opacity-50 from-red-900 to-red-100 rounded overflow-hidden">
                             <a class="absolute top-1/4 left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">Anime</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
 
-                        <div class="relative bg-gradient-to-r from-yellow-900 to-yellow-100 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r hover:opacity-50 from-yellow-900 to-yellow-100 rounded overflow-hidden">
                             <a class="absolute lg:top-1/4 lg:left-3 md:top-1 md:left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">Children & Family</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
 
-                        <div class="relative bg-gradient-to-r from-pink-900 to-pink-100 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r hover:opacity-50 from-pink-900 to-pink-100 rounded overflow-hidden">
                             <a class="absolute top-1/4 left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">Comedy</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
 
-                        <div class="relative bg-gradient-to-r from-indigo-900 to-indigo-100 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r hover:opacity-50 from-indigo-900 to-indigo-100 rounded overflow-hidden">
                             <a class="absolute top-1/4 left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">Docuseries</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="./assets/img/docuseries.png" alt="Action">
                         </div>
@@ -189,43 +241,43 @@
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
 
-                        <div class="relative bg-gradient-to-r from-pink-500 to-pink-100 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r hover:opacity-50 from-pink-500 to-pink-100 rounded overflow-hidden">
                             <a class="absolute top-1/4 left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">French</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
 
-                        <div class="relative bg-gradient-to-r from-blue-500 to-blue-100 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r hover:opacity-50 from-blue-500 to-blue-100 rounded overflow-hidden">
                             <a class="absolute top-1/4 left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">French</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
 
-                        <div class="relative bg-gradient-to-r from-purple-600 to-purple-100 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r from-purple-600 hover:opacity-50 to-purple-100 rounded overflow-hidden">
                             <a class="absolute top-1/4 left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">Horror</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
 
-                        <div class="relative bg-gradient-to-r from-red-600 to-red-100 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r from-red-600 hover:opacity-50 to-red-100 rounded overflow-hidden">
                             <a class="absolute top-1/4 left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">International</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
 
-                        <div class="relative bg-gradient-to-r from-indigo-700 to-indigo-100 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r from-indigo-700 hover:opacity-50 to-indigo-100 rounded overflow-hidden">
                             <a class="absolute top-1/4 left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">Reality</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
 
 
-                        <div class="relative bg-gradient-to-r from-yellow-500 to-yellow-100 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r from-yellow-500 hover:opacity-50 to-yellow-100 rounded overflow-hidden">
                             <a class="absolute top-1/4 left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">Romance</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
 
-                        <div class="relative bg-gradient-to-r from-pink-400 to-pink-100 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r from-pink-400 hover:opacity-50 to-pink-100 rounded overflow-hidden">
                             <a class="absolute top-1/4 left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">Sci-fi</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
 
-                        <div class="relative bg-gradient-to-r from-purple-500 to-purple-50 rounded overflow-hidden">
+                        <div class="relative bg-gradient-to-r from-purple-500 hover:opacity-50 to-purple-50 rounded overflow-hidden">
                             <a class="absolute top-1/4 left-3 no-underline text-white font-bold lg:text-xl md:text-base z-10" href="#">Thriller</a>
                             <img class="rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="" alt="Action">
                         </div>
@@ -235,6 +287,10 @@
             </div>
 
         </section>
+
+        <!-- TV Shows par genre-->
+
+        <!-- Trending Now-->
 
         <br>
 
@@ -255,6 +311,10 @@
         </section>
         <br>
 
+        <!-- Trending Now-->
+
+        <!-- Top 10 on planet Mars Today -->
+
 
         <section class="mx-5 p-1.5  ml-10 font-bold">
             <h1 class="text-white">Top 10 on planet Mars Today </h1>
@@ -273,11 +333,75 @@
                 </div>
 
         </section>
+        <!-- Top 10 on planet Mars Today -->
+
+        <section class="mx-5 p-1.5 overflow-x-hidden overflow-x-scroll">
+            <h1 class="text-white ml-10 font-bold">Comedy</h1>
+            <div class=" duration-200 flex items-center inline-block align-baseline">
+                <a href=""><img src="./assets/img/comedie1.jpg" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/comedie2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
+                <a href=""><img src="./assets/img/comedie3.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/comedie4.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/comedie5.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/comedie6.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/comedie7.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/comedie8.jpg" alt="" class=" hover:scale-y- object-contain max-h-64 m-2 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/comedie9.jpg" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/comedie10.jpg" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+            </div>
+        </section>
+
+        <!-- My List-->
+
+
+        <br>
+
+        <!-- Netflix Originals-->
+
+
+        <section class="mx-5 p-1.5">
+            <h1 class="text-white ml-10 font-bold">Horror</h1>
+            <div class=" duration-200 flex overflow-hidden overflow-x-scroll items-center">
+                <a href=""><img src="./assets/img/horror1.jpg" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/horror2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
+                <a href=""><img src="./assets/img/horror3.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/horror4.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/horror5.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/horror6.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/horror7.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/horror8.jpg" alt="" class=" hover:scale-y- object-contain max-h-64 m-2 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/horror9.jpg" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/horror10.jpg" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+            </div>
+        </section>
+        <br>
+
+        <!-- Netflix Originals-->
+
+        <!-- TV Show-->
+        <section class="mx-5 p-1.5">
+            <h1 class="text-white ml-10 font-bold">TV Show</h1>
+            <div class=" duration-200 flex overflow-hidden overflow-x-scroll items-center">
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/anonim.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
+                <a href=""><img src="./assets/img/green-snake-2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/horror12.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/casa.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/kenshin.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/rom4.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/narcos.jpg" alt="" class=" hover:scale-y-105 object-contain max-h-64 m-2 max-w-xs rounded"></a>
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+            </div>
+        </section>
 
 
     </main>
 
+    <!------------------------------------------------Main------------------------------------------------>
+
     <br><br><br><br>
+    <!------------------------------------------------Footer------------------------------------------------>
 
     <footer class="py-6 mt-6 w-4/6 mx-auto h-32 text-gray-800 space-x-5">
 
@@ -290,7 +414,7 @@
 
 
         </div>
-        <div class="grid gap-2 grid-cols-4 ">
+        <div class="grid gap-y-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 ">
 
             <div>
                 <a class="hover:text-gray-400" href="#">Audio And Subtitles</a>
@@ -351,11 +475,19 @@
 
         </div>
 
-        <p class="mb-4">&copy;1997-2021 Netflix,Inc. {i-0000000000000}</p>
+        <p class="mb-4">&copy;1997-2022 Netflix,Inc. {i-0000000000000}</p>
 
         <br> <br> <br>
 
     </footer>
+    <!------------------------------------------------Footer------------------------------------------------>
+
+    <!------------------------------------------------JS link------------------------------------------------>
+
+    <script src="./assets/js/main.js" type="text/javascript">
+    </script>
+
+    <!------------------------------------------------JS link------------------------------------------------>
 
 
 
