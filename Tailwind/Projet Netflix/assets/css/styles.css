@@ -1,0 +1,37 @@
+body {
+    overflow-x: hidden;
+}
+
+.leftArrow {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    z-index: 3;
+}
+
+.rigthArrow {
+    display: flex;
+    align-items: flex-end;
+    justify-items: end;
+    grid: initial;
+    position: relative;
+}
+
+.bar {
+    display: flex;
+}
+
+.carousel {
+    overflow-x: scroll;
+    overflow: hidden;
+}
+
+.carousel .bar {
+    display: flex;
+}
+
+.navbar {
+    transition: 0.8s;
+}
