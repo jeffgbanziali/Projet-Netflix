@@ -22,9 +22,9 @@
 
     <header>
 
-        <section class="fixed top-0 w-full bg-gradient-to-b from-black text-white">
+        <section id="navbar" class="fixed  top-0 w-full h-18 bg-gradient-to-b  from-black  z-50 text-white">
 
-            <div class="flex xl:flex-row flex-col items-center py-5 px-12 ml-2">
+            <div class="flex xl:flex-row flex-col items-center py-2 px-12 ml-2">
                 <a href="#">
                     <img src="./assets/logo/MicrosoftTeams-image.png" alt="Netflix" class="w-24 cursor-pointer" />
                 </a>
@@ -105,99 +105,419 @@
         <!-- My List-->
 
 
-        </div>
-        <h1 class="text-white ml-9 font-bold">My List</h1>
-        <section class="mx-5 p-1.5 ">
-            <div class="carousel">
-                <div class=" scrollbar-left left-arrow absolute bg-gray-900 pt-4 opacity-0 hover:opacity-40 ">
-                    <!--items-start flex-->
-                    <button class="  focus:outline-none text-white text-4xl absolute my-28 z-30  ">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
+        <p class="text-white py-2 font-semibold text-xl ml-16">My List</p>
 
+        <section class="carousel overflow-x-hidden scroll-smooth mb-12">
+
+            <!-- carousel -->
+            <div class="flex space-x-2">
+
+                <!-- arrow left-->
+                <div class="absolute left-0 mt-16 z-30 cursor-pointer text-white leftArrow" onClick="leftScroll('.carousel', '.leftArrow')">
+                    <button class="hover:bg-opacity-80 fixed bg-none relative p-4 h-40  mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
                 </div>
-                <div class=" duration-200 flex items-center inline-block align-baseline">
-                    <div class="bar">
-                        <a href=""><img src="./assets/img/horror1.jpg" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
-                        <a href=""><img src="./assets/img/anonim.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
-                        <a href=""><img src="./assets/img/green-snake-2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
-                        <a href=""><img src="./assets/img/horror12.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
-                        <a href=""><img src="./assets/img/casa.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                        <a href=""><img src="./assets/img/kenshin.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                        <a href=""><img src="./assets/img/rom4.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
-                        <a href=""><img src="./assets/img/comedie12.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
-                        <a href=""><img src="./assets/img/horror14.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
-                        <a href=""><img src="./assets/img/rom10.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                        <a href=""><img src="./assets/img/doc3.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                        <a href=""><img src="./assets/img/rom6.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
-                        <a href=""><img src="./assets/img/narcos.jpg" alt="" class=" hover:scale-y- object-contain max-h-64 m-2 max-w-xs rounded"></a>
-                        <a href=""><img src="./assets/img/horror7.jpg" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
-                        <a href=""><img src="./assets/img/horror13.jpg" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
 
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image" src="./assets/img/My List/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image2" src="./assets/img/My List/green-snake-2.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image3" src="./assets/img/My List/newgods.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image4" src="./assets/img/My List/saint.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image5" src="./assets/img/My List/squid.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image6" src="./assets/img/My List/narcos.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image7" src="./assets/img/My List/touriste.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image8" src="./assets/img/My List/peaky.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="   ">
+                        <a href="#"><img id="image9" src="./assets/img/My List/casa.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image10" src="./assets/img/My List/anonim.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image11" src="./assets/img/My List/kenshin.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image12" src="./assets/img/My List/thelastki,gdom.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image13" src="./assets/img/My List/lucifer.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image14" src="./assets/img/My List/boruto.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img id="image15" src="./assets/img/My List/boy.png" class=" hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
                     </div>
                 </div>
 
-                <div class=" scrollbar-rigth right-arrow grid justify-items-end   ">
-                    <!--items-end flex grid justify-items-end-->
-                    <button class="text-white text-4xl absolute mb-28 z-30 bg-blue opacity-0 hover:opacity-40 ">
-                    <i class="fa-solid fa-chevron-right"></i>
-            </button>
-
+                <!-- arrow right -->
+                <div class="absolute right-0 mt-16 text-white cursor-pointer rightArrow" onClick="rightScroll('.carousel', '.rightArrow')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
                 </div>
+
+
             </div>
 
-
-
         </section>
-
-
 
         <!-- My List-->
 
 
-        <br>
+        <!-- Tv Show-->
 
-        <!-- Netflix Originals-->
+        <p class="text-white py-2 font-semibold text-xl ml-16">Tv Show</p>
+
+        <section class="carousel1 overflow-x-hidden scroll-smooth mb-12">
+
+            <!-- carousel -->
+            <div class="flex space-x-2 ">
+
+                <!-- arrow left-->
+                <div class="absolute left-0 mt-16 z-30 cursor-pointer text-white leftArrow1" onClick="leftScroll('.carousel1', '.leftArrow1')">
+                    <button class="relative p-4 h-40  mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+                </div>
+
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/ragnarok.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/lucifer.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom3.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/anonim.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror16.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/boruto.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Tv Shows/affection.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="   ">
+                        <a href="#"><img src="./assets/img/Tv Shows/vikings.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Tv Shows/vanhelsing.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror8.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom4.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/touriste.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim8.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/comédie/comedie12.jpg" class=" hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+
+                <!-- arrow right -->
+                <div class="absolute right-0 mt-16 text-white cursor-pointer rightArrow1" onClick="rightScroll('.carousel1', '.rightArrow1')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+                </div>
 
 
-        <section class="mx-5 p-1.5">
-            <h1 class="text-white ml-10 font-bold">Neflix Originals</h1>
-            <div class=" duration-200 flex overflow-hidden overflow-x-scroll items-center">
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/anonim.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
-                <a href=""><img src="./assets/img/green-snake-2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/horror12.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/casa.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/kenshin.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/rom4.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/narcos.jpg" alt="" class=" hover:scale-y- object-contain max-h-64 m-2 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
             </div>
+
         </section>
-        <br>
 
-        <!-- Netflix Originals-->
 
-        <!-- TV Show-->
-        <section class="mx-5 p-1.5">
-            <h1 class="text-white ml-10 font-bold">TV Show</h1>
-            <div class=" duration-200 flex overflow-hidden overflow-x-scroll items-center">
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/anonim.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
-                <a href=""><img src="./assets/img/green-snake-2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/horror12.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/casa.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/kenshin.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/rom4.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/narcos.jpg" alt="" class=" hover:scale-y-105 object-contain max-h-64 m-2 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+
+        <!-- Tv Show-->
+
+
+        <!-- Trending Now-->
+
+
+        <p class="text-white py-2 font-semibold text-xl ml-16">Trending Now</p>
+
+        <section class="carousel2 overflow-x-hidden scroll-smooth mb-12">
+
+            <!-- carousel -->
+            <div class="flex space-x-2 ">
+
+                <!-- arrow left-->
+                <div class="absolute left-0 mt-16 z-30 cursor-pointer text-white leftArrow2" onClick="leftScroll('.carousel2', '.leftArrow2')">
+                    <button class="relative p-4 h-40  mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+                </div>
+
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/2.webp" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/3.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/4.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/5.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/6.webp" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/7.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/8.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="   ">
+                        <a href="#"><img src="./assets/img/Trending Now/9.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/10.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/11.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/12.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/13.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/14.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/15.jpeg" class=" hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+
+                <!-- arrow right -->
+                <div class="absolute right-0 mt-16 text-white cursor-pointer rightArrow2" onClick="rightScroll('.carousel2', '.rightArrow2')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+                </div>
+
+
+
             </div>
-        </section>
-        <br>
 
-        <!-- TV Show-->
+        </section>
+
+        <!-- Trending Now-->
+
+
+        <!-- Watch It Again -->
+
+        <p class="text-white py-2 font-semibold text-xl ml-16">Watch It Again</p>
+        <section class="carousel3 overflow-x-hidden scroll-smooth mb-12">
+
+            <!-- carousel -->
+            <div class="flex space-x-2 ">
+
+                <!-- arrow left-->
+                <div class="absolute left-0 mt-16 z-30 cursor-pointer text-white leftArrow3" onClick="leftScroll('.carousel3', '.leftArrow3')">
+                    <button class="relative p-4 h-40  mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+                </div>
+
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/vikings.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/thelastki,gdom.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/peaky.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/adams.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror16.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror12.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/boy.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/ragnarok.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="   ">
+                        <a href="#"><img src="./assets/img/My list/lucifer.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/14.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/5.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim5.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim8.png" class=" hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+
+                <!-- arrow right -->
+                <div class="absolute right-0 mt-16 text-white cursor-pointer rightArrow3" onClick="rightScroll('.carousel3', '.rightArrow3')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Watch It Again -->
 
         <!-- TV Shows par genre-->
         <section>
@@ -290,110 +610,599 @@
 
         <!-- TV Shows par genre-->
 
-        <!-- Trending Now-->
-
-        <br>
-
-        <section class="mx-5 p-1.5">
-            <h1 class="text-white ml-10 font-bold">Trending Now</h1>
-            <div class=" duration-200 flex overflow-hidden overflow-x-scroll  items-center">
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/anonim.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
-                <a href=""><img src="./assets/img/green-snake-2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/horror12.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/casa.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/kenshin.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/rom4.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/narcos.jpg" alt="" class=" hover:scale-y-105 object-contain max-h-64 m-2 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
-            </div>
-        </section>
-        <br>
-
-        <!-- Trending Now-->
-
-        <!-- Top 10 on planet Mars Today -->
 
 
-        <section class="mx-5 p-1.5  ml-10 font-bold">
-            <h1 class="text-white">Top 10 on planet Mars Today </h1>
-            <div class=" duration-200 flex  overflow-x-scroll items-center">
-                <div class="flex items-center relative  space-x-20">
-                    <div class="flex items-center"><img class=" items-center " src="./assets/img/top_1.png " alt=" "><img class=" hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/ems.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw=="></div>
-                    <div class=" flex items-center "><img class="w-auto h-auto " src="./assets/img/top_2.png " alt=" "><img class="  hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/narcos.jpg "></div>
-                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_3.png " alt=" "><img class=" hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/rom11.jpg "></div>
-                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_4.png" alt=" "><img class="  hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/horror14.jpg "></div>
-                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_5.png" alt=" "><img class=" hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/comedie7.jpg "></div>
-                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_6.png " alt=" "><img class="  hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/doc10.jpg "></div>
-                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_7.png " alt=" "><img class="  hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/newgods.jpg "></div>
-                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_8.png" alt=" "><img class=" hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/jojo.jpg"></div>
-                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_9.png " alt=" "><img class="  hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/green-snake-2.jpg "></div>
-                    <div class="flex items-center "><img class="w-auto h-auto " src="./assets/img/top_10.png" alt=" "><img class=" hover:scale-y-105 h-40 w-40 object-contain rounded " src="./assets/img/casa.jpg"></div>
+
+        <!-- Netflix Originals-->
+
+
+        <p class="text-white py-2 font-semibold text-xl ml-16">Netflix Originals</p>
+        <section class="carousel4  overflow-x-hidden scroll-smooth mb-12">
+
+            <!-- carousel -->
+            <div class="flex space-x-2 ">
+
+                <!-- arrow left-->
+                <div class="absolute left-0 mt-16 z-30 cursor-pointer text-white leftArrow4" onClick="leftScroll('.carousel4', '.leftArrow4')">
+                    <button class="relative p-4 h-40  mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
                 </div>
 
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/3.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/4.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/5.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/6.jpeg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/7.webp" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/8.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="   ">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/9.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/10.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/11.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/12.webp" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/13.jpeg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Netflix Orignals/15.jpg" class=" hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+
+                <!-- arrow right -->
+                <div class="absolute right-0 mt-16 text-white cursor-pointer rightArrow4" onClick="rightScroll('.carousel4', '.rightArrow4')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+                </div>
+
+
+
+            </div>
+
         </section>
+
+
+        <!-- Netflix Originals-->
+
         <!-- Top 10 on planet Mars Today -->
 
-        <section class="mx-5 p-1.5 overflow-x-hidden overflow-x-scroll">
-            <h1 class="text-white ml-10 font-bold">Comedy</h1>
-            <div class=" duration-200 flex items-center inline-block align-baseline">
-                <a href=""><img src="./assets/img/comedie1.jpg" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/comedie2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
-                <a href=""><img src="./assets/img/comedie3.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/comedie4.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/comedie5.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/comedie6.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/comedie7.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/comedie8.jpg" alt="" class=" hover:scale-y- object-contain max-h-64 m-2 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/comedie9.jpg" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/comedie10.jpg" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+
+        <section class="carousel9 overflow-x-hidden mb-12">
+
+
+            <div class=" flex space-x-2">
+                <div class="absolute left-0 mt-6 z-30 cursor-pointer text-white leftArrow9" onClick="leftScroll('.carousel9', '.leftArrow9')">
+                    <button class="relative p-4 h-40  mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+                </div>
+                <div class="relative">
+                    <div class="flex w-64 ml-16">
+                        <a href="#"><img src="./assets/img/top/top_1.png" class="" /></a>
+                        <a href="#"><img src="./assets/img/My list/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" class="rounded w-64" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="flex w-64">
+                        <a href="#"><img src="./assets/img/top/top_2.png" class="" /></a>
+                        <a href="#"><img src="./assets/img/My list/narcos.jpg" class="rounded w-64" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="flex w-64">
+                        <a href="#"><img src="./assets/img/top/top_3.png" class="" /></a>
+                        <a href="#"><img src="./assets/img/comédie/comedie3.jpg" class="rounded w-64" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="flex w-64">
+                        <a href="#"><img src="./assets/img/top/top_4.png" class="" /></a>
+                        <a href="#"><img src="./assets/img/My list/thelastki,gdom.png" class="rounded w-64" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="flex w-64">
+                        <a href="#"><img src="./assets/img/top/top_5.png" class="" /></a>
+                        <a href="#"><img src="./assets/img/My list/newgods.jpg" class="rounded w-64" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="flex w-64">
+                        <a href="#"><img src="./assets/img/top/top_6.png" class="" /></a>
+                        <a href="#"><img src="./assets/img/horror/horror4.jpg" class="rounded w-64" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="flex w-64">
+                        <a href="#"><img src="./assets/img/top/top_7.png" class="" /></a>
+                        <a href="#"><img src="./assets/img/Trending Now/2.webp" class="rounded w-64" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="flex w-64">
+                        <a href="#"><img src="./assets/img/top/top_8.png" class="" /></a>
+                        <a href="#"><img src="./assets/img/My list/peaky.jpg" class="rounded w-64" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="flex w-64">
+                        <a href="#"><img src="./assets/img/top/top_9.png" class="" /></a>
+                        <a href="#"><img src="./assets/img/My list/boy.png" class="rounded w-64" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="flex w-64">
+                        <a href="#"><img src="./assets/img/top/top_10.png" class="" /></a>
+                        <a href="#"><img src="./assets/img/My list/adams.jpg" class="rounded w-64" /></a>
+                    </div>
+                </div>
+
+                <div class="absolute right-0 mt-6 text-white cursor-pointer rightArrow9" onClick="rightScroll('.carousel9', '.rightArrow9')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+                </div>
             </div>
+
         </section>
-
-        <!-- My List-->
-
-
+        <!-- Top 10 on planet Mars Today -->
         <br>
 
-        <!-- Netflix Originals-->
+        <!-- Horror-->
+
+        <p class="text-white py-2 font-semibold text-xl ml-16">Horror</p>
+        <section class="carousel5 overflow-x-hidden scroll-smooth mb-12">
+
+            <!-- carousel -->
+            <div class="flex space-x-2 ">
+
+                <!-- arrow left-->
+                <div class="absolute left-0 mt-16 z-30 cursor-pointer text-white leftArrow5" onClick="leftScroll('.carousel5', '.leftArrow5')">
+                    <button class="relative p-4 h-40  mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+                </div>
+
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror2.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror3.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror4.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror5.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror6.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror7.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror8.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="   ">
+                        <a href="#"><img src="./assets/img/horror/horror9.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror10.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror11.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror12.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror13.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror14.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/horror/horror15.jpg" class=" hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+
+                <!-- arrow right -->
+                <div class="absolute right-0 mt-16 text-white cursor-pointer rightArrow5" onClick="rightScroll('.carousel5', '.rightArrow5')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+                </div>
 
 
-        <section class="mx-5 p-1.5">
-            <h1 class="text-white ml-10 font-bold">Horror</h1>
-            <div class=" duration-200 flex overflow-hidden overflow-x-scroll items-center">
-                <a href=""><img src="./assets/img/horror1.jpg" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/horror2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
-                <a href=""><img src="./assets/img/horror3.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/horror4.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/horror5.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/horror6.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/horror7.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/horror8.jpg" alt="" class=" hover:scale-y- object-contain max-h-64 m-2 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/horror9.jpg" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/horror10.jpg" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
+
             </div>
+
+        </section>
+
+        <!-- Horror-->
+
+
+
+
+        <!-- Anime -->
+
+
+        <p class="text-white py-2 font-semibold text-xl ml-16">Anime</p>
+        <section class="carousel6 overflow-x-hidden scroll-smooth mb-12">
+
+            <!-- carousel -->
+            <div class="flex space-x-2 ">
+
+                <!-- arrow left-->
+                <div class="absolute left-0 mt-16 z-30 cursor-pointer text-white leftArrow6" onClick="leftScroll('.carousel6', '.leftArrow6')">
+                    <button class="relative p-4 h-40  mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+                </div>
+
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim2.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim3.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim4.webp" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim5.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim6.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim7.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim8.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="   ">
+                        <a href="#"><img src="./assets/img/anime/anim9.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim10.png" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim11.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim12.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim13.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim14.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/anime/anim15.png" class=" hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+
+                <!-- arrow right -->
+                <div class="absolute right-0 mt-16 text-white cursor-pointer rightArrow6" onClick="rightScroll('.carousel6', '.rightArrow6')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Anime-->
+
+        <!-- Docuseries-->
+
+
+        <p class="text-white py-2 font-semibold text-xl ml-16">Docuseries</p>
+        <section class="carousel7 overflow-x-hidden scroll-smooth mb-12">
+
+            <!-- carousel -->
+            <div class="flex space-x-2 ">
+
+                <!-- arrow left-->
+                <div class="absolute left-0 mt-16 z-30 cursor-pointer text-white leftArrow7" onClick="leftScroll('.carousel7', '.leftArrow7')">
+                    <button class="relative p-4 h-40  mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+                </div>
+
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc2.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc3.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc4.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc5.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc6.jpeg_large" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc8.jpg.crdownload" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc9.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="   ">
+                        <a href="#"><img src="./assets/img/Doc/doc1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Doc/doc1.jpg" class=" hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+
+                <!-- arrow right -->
+                <div class="absolute right-0 mt-16 text-white cursor-pointer rightArrow7" onClick="rightScroll('.carousel7', '.rightArrow7')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Romance-->
+
+        <!-- Romance-->
+
+
+        <p class="text-white py-2 font-semibold text-xl ml-16">Romance</p>
+        <section class="carousel8 overflow-x-hidden scroll-smooth mb-12">
+
+            <!-- carousel -->
+            <div class="flex space-x-2 ">
+
+                <!-- arrow left-->
+                <div class="absolute left-0 mt-16 z-30 cursor-pointer text-white leftArrow8" onClick="leftScroll('.carousel8', '.leftArrow8')">
+                    <button class="relative p-4 h-40  mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+                </div>
+
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom1.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom2.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom3.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom4.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom5.jpg.crdownload" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom6.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom7.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs " /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom8.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="   ">
+                        <a href="#"><img src="./assets/img/Romance/rom9.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom10.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom11.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Romance/rom11.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/Trending Now/8.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/My list/anonim.jpg" class="hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="">
+                        <a href="#"><img src="./assets/img/comédie/comedie12.jpg" class=" hover:scale-y-105 rounded m-2 max-h-64 max-w-xs" /></a>
+                    </div>
+                </div>
+
+                <!-- arrow right -->
+                <div class="absolute right-0 mt-16 text-white cursor-pointer rightArrow8" onClick="rightScroll('.carousel8', '.rightArrow8')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+                </div>
+
+
+
+            </div>
+
         </section>
         <br>
 
-        <!-- Netflix Originals-->
-
-        <!-- TV Show-->
-        <section class="mx-5 p-1.5">
-            <h1 class="text-white ml-10 font-bold">TV Show</h1>
-            <div class=" duration-200 flex overflow-hidden overflow-x-scroll items-center">
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 m-2 object-contain max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/anonim.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-h-64 rounded max-w-xs"></a>
-                <a href=""><img src="./assets/img/green-snake-2.jpg" alt="" class=" hover:scale-y-105 m-2 object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/horror12.jpg" alt="" class=" hover:scale-y-105 m-2 p-auto object-contain max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/casa.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/kenshin.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-w-xs max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/rom4.jpg" alt="" class=" hover:scale-y-105 object-contain m-2 max-h-64 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/narcos.jpg" alt="" class=" hover:scale-y-105 object-contain max-h-64 m-2 max-w-xs rounded"></a>
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
-                <a href=""><img src="./assets/img/VAL.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vNTk1NzNjMzYtMDViZC00OWM0LThjN2QtMzljNDExYTJmNTE0LmpwZw==" alt="" class=" max-w-xs hover:scale-y-105 object-contain m-2 max-h-64 rounded"></a>
-            </div>
-        </section>
+        <!-- Docuseries-->
 
 
     </main>
@@ -483,9 +1292,110 @@
     <!------------------------------------------------Footer------------------------------------------------>
 
     <!------------------------------------------------JS link------------------------------------------------>
+    <script>
+        //scroll bar(type carousel)
 
-    <script src="./assets/js/main.js" type="text/javascript">
+        // right event
+        function rightScroll(carousel, rightArrow) {
+
+            const scroll = document.querySelector(carousel);
+
+            const right = document.querySelector(rightArrow);
+
+            right.addEventListener("click", () => {
+                scroll.scrollLeft += scroll.offsetWidth;
+            })
+
+        }
+
+        // left event
+        function leftScroll(carousel, leftArrow) {
+
+            const scroll = document.querySelector(carousel);
+
+            const left = document.querySelector(leftArrow);
+
+            left.addEventListener("click", () => {
+                scroll.scrollLeft -= scroll.offsetWidth;
+            })
+
+        };
+
+        //scroll bar(type carousel)
+
+
+        // Nav bar scroll 
+
+        window.onscroll = function() {
+            if (document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.background = "black";
+                document.getElementById("navbar").style.padding = "10px";
+            } else {
+                document.getElementById("navbar").style.background = "none";
+                document.getElementById("navbar").style.padding = "0px 0px";
+            }
+        };
+        // Nav bar scroll
+
+        // functions to change images after updates
+
+
+        var image = document.getElementById("image"); {
+            image.setAttribute('src', './assets/img/Doc/doc1.jpg');
+            var image = document.getElementById('image');
+        };
+        var image2 = document.getElementById("image2"); {
+            image2.setAttribute('src', './assets/img/My list/kenshin.jpg');
+        };
+        var image3 = document.getElementById("image3"); {
+            image3.setAttribute('src', './assets/img/My list/lucifer.png');
+        };
+        var image4 = document.getElementById("image4"); {
+            image4.setAttribute('src', './assets/img/My list/green-snake-2.jpg');
+        };
+        var image5 = document.getElementById("image5"); {
+            image5.setAttribute('src', './assets/img/My list/adams.jpg');
+        };
+        var image6 = document.getElementById("image6"); {
+            image6.setAttribute('src', './assets/img/My list/peaky.jpg');
+        };
+        var image7 = document.getElementById("image7"); {
+            image7.setAttribute('src', './assets/img/My list/boruto.jpg');
+        };
+        var image8 = document.getElementById("image8"); {
+            image8.setAttribute('src', './assets/img/My list/ragnarok.png');
+        };
+        var image9 = document.getElementById("image9"); {
+            image9.setAttribute('src', './assets/img/Romance/rom9.jpg');
+        };
+        var image10 = document.getElementById("image10"); {
+            image10.setAttribute('src', './assets/img/horror/horror9.jpg');
+        };
+        var image11 = document.getElementById("image11"); {
+            image11.setAttribute('src', './assets/img/My list/squid.jpg');
+        };
+        var image12 = document.getElementById("image12"); {
+            image12.setAttribute('src', './assets/img/My list/saint.jpg');
+        };
+        var image13 = document.getElementById("image13"); {
+            image13.setAttribute('src', './assets/img/My list/vikings.png');
+        };
+        var image14 = document.getElementById("image14"); {
+            image15.setAttribute('src', './assets/img/horror/horror14.jpg');
+        };
+        var image15 = document.getElementById("image15"); {
+            image15.setAttribute('src', './assets/img/comédie/comedie6.jpg');
+        };
+
+
+
+
+
+
+        // functions to change images after updates
     </script>
+
+
 
     <!------------------------------------------------JS link------------------------------------------------>
 
