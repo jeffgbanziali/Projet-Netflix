@@ -35,3 +35,31 @@ body {
 .navbar {
     transition: 0.8s;
 }
+
+.movie-container {
+    position: relative;
+}
+
+.movie-container .movie-hover {
+    position: absolute;
+    text-align: center;
+}
+
+.movie-container:hover .movie-hover {
+    opacity: 0;
+}
+
+.movie-container .movie-img {
+    position: absolute;
+}
+
+.movie-container .movie-hover {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    transition: all .5s;
+    transform: scaleY(1.1);
+    transform: scaleX(1.1);
+}
