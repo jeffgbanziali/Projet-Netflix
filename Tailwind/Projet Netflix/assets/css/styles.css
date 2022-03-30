@@ -1,6 +1,23 @@
 body {
     overflow-x: hidden;
 }
+/* ******************************************** */
+/* prefix vendor */
+/* ******************************************** */
+::-webkit-scrollbar {
+    width: 0px;
+    background:transparent; /* make scrollbar transparent */
+}
+
+
+.navbar {
+    background: #141414;
+    position: fixed;
+    z-index:99;
+    width:100%;
+    height:66px;
+    transition: all ease-out 0.5s;
+}
 
 .leftArrow {
     display: flex;
@@ -32,9 +49,6 @@ body {
     display: flex;
 }
 
-.navbar {
-    transition: 0.8s;
-}
 
 .movie-container {
     position: relative;
