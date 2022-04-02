@@ -12,6 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
@@ -39,22 +40,154 @@
                 </nav>
 
                 <nav class="hidden xl:flex justify-center items-center space-x-8 ml-auto text-base font-semibold">
-                    <button><i class="fas fa-search text-xl cursor-pointer focus:outline-none"></i></button>
-                    <button><i class="fas fa-gift text-xl cursor-pointer focus:outline-none"></i></button>
-                    <button><i class="fas fa-bell text-xl cursor-pointer focus:outline-none"></i></button>
+                    <div class=" flex items-center justify-between ml-2 group research text-white">
+                        <div class="icon">
+                            <i class=" search fas fa-search text-xl cursor-pointer focus:outline-none"></i>
+                        </div>
+                        <div class="input">
+                            <input type="text"  placeholder="Search movies" id="search">
+                            <i class=" text-white search fa-solid fa-xmark text-xl cursor-pointer focus:outline-none"></i>
+                        </div>
+                    </div>
 
-                    <button class="flex items-center focus:outline-none">
-                            <img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/avatar.jpg?v=1646815955058" alt="Avatar" class="w-8 h-8 rounded"/>
-                            <svg class="w-5 h-5 text-white ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
+                    <div class="flex items-center justify-between ml-2 group" onmouseover="HeaderSection('Inner')" onmouseout="HeaderSection('Inner')">
+                        <button><i class="fas fa-gift text-xl cursor-pointer focus:outline-none"></i></button>
+                        <div class="absolute w-[26rem] h-96 top-16 lg:right-26  md:right-24 border-t-2 border-white hover:cursor-pointer hidden transition-all" id="Inner">
+                            <h1 class="absolute lg:right-24 md:right-6 text-lg -translate-y-full mt-1"><i class="fa-solid fa-angle-down rotate-180"></i></h1>
+                            <div class="h-full ">
+                                <div>
+                                    <img src="./assets/img/Notification/death.jpg" class="w-169 object-cover rounded">
+                                </div>
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-red/75 hover:bg-black">
 
-                        </button>
+                                    <div class="ml-2 space-x-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white ">
+                                            <button><i class="fa-solid fa-book-skull text-yellow-400 text-xl cursor-pointer focus:outline-none"><a href="" class="pl-2 text-white text-xs">A pure classic for this month of April</a></i></button>
+                                        </h1>
+                                        <h3 class="text-gray-500 text-xl">The Bubble</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div onmouseover="HeaderSection('NotiJeff')" onmouseout="HeaderSection('NotiJeff')">
+                        <button><i class="fas fa-bell text-xl cursor-pointer focus:outline-none"></i></button>
+
+                        <div class="absolute w-[26rem] h-96 top-16 lg:right-28 md:right-24 border-t-2 border-white hover:cursor-pointer hidden transition-all" id="NotiJeff">
+                            <h1 class="absolute lg:right-8 md:right-6 text-lg -translate-y-full mt-1"><i class="fa-solid fa-angle-down rotate-180"></i></h1>
+                            <div class="h-full overflow-y-scroll">
+
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="./assets/img/Notification/The-Bubble-Netflix-660x371.webp" class="w-169 object-cover rounded">
+                                    <div class="ml-2 space-x-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white ">
+                                            <button><i class="fas fa-bell text-yellow-400   text-xl cursor-pointer focus:outline-none"><a href="" class="pl-2 text-white text-xs">Reminder: New arrivals</a></i></button>
+                                        </h1>
+                                        <h3 class="text-gray-500 text-xl">The Bubble</h3>
+                                    </div>
+                                </div>
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="./assets/img/Notification/bd.jpg" class="w-169 object-cover rounded">
+                                    <div class="ml-2 space-x-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white ">
+                                            <button><i class="fas fa-bell text-yellow-400   text-xl cursor-pointer focus:outline-none"><a href="" class="pl-2 text-white text-xs">New arrivals</a></i></button>
+                                        </h1>
+                                        <h3 class="text-gray-500 text-xl">The Bridgerton chronicle</h3>
+                                    </div>
+                                </div>
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="./assets/img/Notification/guardian.jpg.crdownload" class="w-169 object-cover rounded">
+                                    <div class="ml-2 space-x-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white ">
+                                            <button><i class="fas fa-bell text-yellow-400   text-xl cursor-pointer focus:outline-none"><a href="" class="pl-2 text-white text-xs">Reminder: New arrivals</a></i></button>
+                                        </h1>
+                                        <h3 class="text-gray-500 text-xl">Guardians of the galaxy</h3>
+                                    </div>
+                                </div>
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="./assets/img/Notification/one-of-us-is-lying_1633790143.jpg" class="w-169 object-cover rounded">
+                                    <div class="ml-2 space-x-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white ">
+                                            <button><i class="fas fa-circle-plus text-red-400 text-xl cursor-pointer focus:outline-none"><a href="" class="pl-2 text-white text-xs">Add my list</a></i></button>
+                                        </h1>
+                                        <h3 class="text-gray-500 text-xl">One of us is lying </h3>
+                                    </div>
+                                </div>
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="./assets/img/Notification/vikings-valhalla-title.jpeg" class="w-169 object-cover rounded">
+                                    <div class="ml-2 space-x-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white ">
+                                            <button><i class="fas fa-bell text-yellow-400   text-xl cursor-pointer focus:outline-none"><a href="" class="pl-2 text-white text-xs">Reminder: New arrivals</a></i></button>
+                                        </h1>
+                                        <h3 class="text-gray-500 text-xl">Vikigs: Valahlla</h3>
+                                    </div>
+                                </div>
+                                <div class="flex w-full p-4 h-32 border-b border-gray-500 bg-black/75 hover:bg-black">
+                                    <img src="./assets/img/Notification/will-sonic-hedgehog-be-netflix.jpg" class="w-169 object-cover rounded">
+                                    <div class="ml-2 space-x-2 group">
+                                        <h1 class="text-md mb-1 text-gray-300 group-hover:text-white ">
+                                            <button><i class="fas fa-bell text-yellow-400   text-xs cursor-pointer focus:outline-none"><a href="" class="pl-2 text-white text-xs">Coming soon to Netflix</a></i></button>
+                                        </h1>
+                                        <h3 class="text-gray-500 text-xl">SONIC</h3>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center justify-between ml-2 group" onmouseover="HeaderSection('option')" onmouseout="HeaderSection('option')">
+
+                        <img src="https://cdn.glitch.global/af80d5c9-1940-44f4-b657-43b4d1e813f7/avatar.jpg?v=1646815955058" alt="Avatar" class="w-10 rounded group-hover:cursor-pointer">
+                        <button class="focus:outline-none"><i class="fa-solid fa-angle-down ml-2 group-hover:rotate-180 transition-all"></i></button>
+
+                        <!-- Profile Block -->
+                        <div class="absolute right-0 hidden top-16 mt-3 bg-black opacity-75 w-48 border border-gray-800 right-10 transition-all" id="option">
+                            <h1 class="absolute right-10 text-lg -translate-y-full mt-1"><i class="fa-solid fa-angle-down rotate-180"></i></h1>
+                            <div class="p-3 border-b border-gray-500 flex-col">
+                                <div class="flex mb-3 items-center ">
+                                    <img src="https://ih1.redbubble.net/image.618405117.2432/flat,1000x1000,075,f.u2.jpg" alt="Avatar Image" class="w-10 rounded">
+                                    <a href="#" class="text-sm ml-2 hover:text-red-600 focus:outline-none">Jeff</a>
+                                </div>
+                                <div class="flex mb-3 items-center group">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Avatar Image" class="w-10 rounded">
+                                    <a href="#" class="text-sm ml-2 hover:text-red-600 focus:outline-none">Flaj</a>
+                                </div>
+                                <div class="flex mb-3 items-center group">
+                                    <img src="https://pbs.twimg.com/profile_images/1165907170178695168/JLkRF8ZY_400x400.png" alt="Avatar Image" class="w-10 rounded">
+                                    <a href="#" class="text-sm ml-2 hover:text-red-600 focus:outline-none">Koukouda</a>
+                                </div>
+                                <div class="flex mb-3 items-center group">
+                                    <img src="https://www.coherentcinema.com/wp-content/uploads/2020/04/money-heist-s4.jpg" alt="Avatar Image" class="w-10 rounded">
+                                    <a href="#" class="text-sm ml-2 hover:text-red-600 focus:outline-none">Chico</a>
+                                </div>
+
+                                <div>
+                                    <a href="#" class="text-sm ml-3 hover:text-red-600 focus:outline-none"><span class="text-lg mr-3"> <i class="text-xl fa-solid fa-pencil "></i></span> Manage profiles</a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-sm ml-3 hover:text-red-600 focus:outline-none"><span class="text-lg mr-3"><i class="text-xl fa-solid fa-up-right-from-square"></i> </span> Exit Home</a>
+                                </div>
+                            </div>
+                            <div class="p-3 border-b border-gray-500 flex justify-center flex-col">
+                                <a href="#" class="hover:text-red-600 ml-3 mb-2 text-sm focus:outline-none"><span class="text-lg mr-3"><i class="fa-solid fa-user"></i></span> Account</a>
+                                <a href="#" class="hover:text-red-600 ml-3 text-sm focus:outline-none"><span class="text-lg mr-3"><i class="fa-solid fa-circle-info"></i></span>Helper Center</a>
+                            </div>
+                            <div class="p-3">
+                                <a href="#" class="hover:text-red-600 pl-6 text-sm focus:outline-none">Sign out of Netflix</a>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </nav>
             </div>
 
         </section>
+
+
 
 
 
@@ -1316,11 +1449,22 @@
 
     <!------------------------------------------------JS link------------------------------------------------>
     <script src="./assets/js/main.js"></script>
+    <script>
+        const search = document.querySelector('.search');
+        const clear = document.querySelector('.clear');
+
+        search.onclick = function() {
+            document.querySelector('.research').classList.toggle('active');
+        }
+        clear.onclick = function() {
+            document.getElementById('.clear').value = '';
+        }
+    </script>
     <!------------------------------------------------JS link------------------------------------------------>
 
 
 
-    < /body>
+</body>
 
-        < /html>
-            < /html>
+
+</html>
