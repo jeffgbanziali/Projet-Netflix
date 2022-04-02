@@ -147,6 +147,30 @@
 
    // video background
 
+   //nav barrrrr
+   function HeaderSection(id) {
+
+       let elmDisplay = document.getElementById(id)
+
+       if (elmDisplay.style.display == "block") {
+
+           elmDisplay.style.display = "none"
+
+       } else {
+
+           elmDisplay.style.display = "block"
+
+       }
+
+   };
+
+   //nav barrrrr
+
+
+
+
+
+
 
 
 
