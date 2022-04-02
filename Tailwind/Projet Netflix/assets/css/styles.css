@@ -1,21 +1,28 @@
 body {
-    overflow-x: hidden;
-}
-/* ******************************************** */
-/* prefix vendor */
-/* ******************************************** */
-::-webkit-scrollbar {
-    width: 0px;
-    background:transparent; /* make scrollbar transparent */
+    overflow-x: scroll;
 }
 
+
+/* ******************************************** */
+
+
+/* prefix vendor */
+
+
+/* ******************************************** */
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
 
 .navbar {
     background: #141414;
     position: fixed;
-    z-index:99;
-    width:100%;
-    height:66px;
+    z-index: 99;
+    width: 100%;
+    height: 66px;
     transition: all ease-out 0.5s;
 }
 
@@ -49,7 +56,6 @@ body {
     display: flex;
 }
 
-
 .movie-container {
     position: relative;
 }
@@ -76,4 +82,97 @@ body {
     transition: all .5s;
     transform: scaleY(1.1);
     transform: scaleX(1.1);
+}
+
+.listonglets {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.deroulant {
+    margin-top: 10px;
+    position: absolute;
+    width: 144px;
+    display: flex;
+    display: none;
+    flex-direction: column;
+}
+
+.option {
+    left: -19px;
+    float: left;
+    margin: 0 5px;
+    display: flex;
+    display: block;
+}
+
+.onglets {
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+.research {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 52px;
+}
+
+.research:hover {
+    background-color: #141414;
+}
+
+.research.active {
+    width: 360px;
+}
+
+.research .icon {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.research .icon .search {
+    font-size: 21px;
+    cursor: pointer;
+    color: white;
+}
+
+.research .input {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.5s;
+    background: #141414;
+    border-radius: 50;
+}
+
+.research .input input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    background-color: #141414;
+}
+
+.research .input .clear {
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
 }
